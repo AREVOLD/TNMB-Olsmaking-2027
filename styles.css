@@ -94,7 +94,7 @@ h1 {
 }
 
 .intro > h1 { margin-bottom: 0; }
-.home-tagline { margin: 8px 0 18px; color: #f00; font-size: 28px; font-weight: 700; line-height: 1.1; }
+.home-tagline { margin: 8px 0 18px; color: #ff4500; font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 700; line-height: 0.95; letter-spacing: .06em; }
 
 .intro-copy { max-width: 380px; margin: 16px 0 35px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .list-meta { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
@@ -167,7 +167,7 @@ h1 {
   .page-shell { width: calc(100% - 40px); }
   .intro { padding-top: 38px; }
   h1 { font-size: 42px; }
-  .home-tagline { font-size: 21px; }
+  .home-tagline { font-size: clamp(2.2rem, 9vw, 3.3rem); }
   .intro-copy { margin-bottom: 27px; }
   .beer-list { grid-template-columns: 1fr; }
   .beer-card { min-height: 112px; padding-top: 12px; padding-bottom: 12px; }
