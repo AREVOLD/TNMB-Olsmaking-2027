@@ -1,5 +1,5 @@
-const CACHE_NAME = 'flaskelista-2027-v8';
-const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/forge-of-the-nutons.jpg', './images/black-arts-and-alchemy.jpg', './images/the-apple-freak.jpg', './images/wheat-train.jpg', './images/jester-haze.jpg', './images/zest-in-peace.jpg', './images/messe-noir.jpg', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
+const CACHE_NAME = 'flaskelista-2027-v9';
+const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/beer.png', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
