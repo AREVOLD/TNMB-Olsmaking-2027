@@ -70,6 +70,10 @@ button { color: inherit; }
 .install-button svg, .back-button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .page-shell { width: min(100% - 48px, 1024px); margin: 0 auto; }
 .intro { padding: 54px 0 25px; }
+.event-details { margin-bottom: 25px; padding: 15px; border-left: 4px solid #ff4500; border-radius: 8px; background: #111; }
+.event-details p { display: grid; grid-template-columns: 72px 1fr; margin: 0 0 5px; font-size: 1.1rem; }
+.event-details p:last-of-type { margin-bottom: 0; }
+.event-details a { display: inline-block; margin-top: 12px; color: #ff4500; font-size: 0.95rem; text-decoration: underline; }
 
 .eyebrow, .list-meta, .list-footer, .detail-label {
   font-size: 10px;
@@ -87,6 +91,8 @@ h1 {
   font-weight: 500;
   line-height: 1.02;
 }
+
+.intro > h1 { margin-bottom: 18px; }
 
 .intro-copy { max-width: 380px; margin: 16px 0 35px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .list-meta { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
