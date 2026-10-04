@@ -135,7 +135,7 @@ function renderDetail(beer) {
   const untappdLink = beer.untappd ? `
     <a class="untappd-link" href="${beer.untappd}" target="_blank" rel="noreferrer noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-      Se på Untappd
+      Untappd
     </a>
   ` : '';
 
