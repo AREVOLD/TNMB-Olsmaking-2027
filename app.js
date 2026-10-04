@@ -114,21 +114,16 @@ function renderDetail(beer) {
     <div class="detail-layout">
       <div class="detail-art-wrap"><img class="detail-art" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}"></div>
       <article class="detail-copy">
-        <p class="draft-notice">ARBEIDSUTKAST: Denne ølinformasjonen er kopiert fra 2026 og er ikke bekreftet for 2027.</p>
         <h1>${beer.name}</h1>
-        <p class="detail-description">${beer.description || 'Ingen beskrivelse oppgitt.'}</p>
-        <p class="detail-label">I GLASSET</p>
+        <p class="detail-description">Midlertidig spor. Her legges det inn en beskrivelse av ølet.</p>
         <dl class="facts">
-          <div class="fact"><dt>Øltype</dt><dd>${beer.style}</dd></div>
-          <div class="fact"><dt>Alkohol</dt><dd>${beer.abv}</dd></div>
-          <div class="fact"><dt>Servering</dt><dd>${beer.temperature}</dd></div>
-          <div class="fact"><dt>Bryggedato</dt><dd>${beer.brewed || 'Ikke oppgitt'}</dd></div>
-          ${beer.soundtrack ? `<div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>` : ''}
+          <div class="fact"><dt>Øltype</dt><dd>Øltype</dd></div>
+          <div class="fact"><dt>Alkohol</dt><dd>6.6%</dd></div>
+          <div class="fact"><dt>Servering</dt><dd>4-6°C</dd></div>
+          <div class="fact"><dt>Bryggedato</dt><dd>DD.MM.YYYY</dd></div>
+          <div class="fact"><dt>Brygger</dt><dd></dd></div>
+          <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>Her legges det inn en beskrivelse av musikkvalget og hvorfor akkurat denne musikken parres med ølet.</dd></div>
         </dl>
-        <a class="untappd-link" href="${beer.untappd}" target="_blank" rel="noopener noreferrer">
-          Finn på Untappd
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6-9 9"/><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/></svg>
-        </a>
       </article>
     </div>`;
   homeView.hidden = true;

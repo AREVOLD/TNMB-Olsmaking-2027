@@ -82,8 +82,6 @@ button { color: inherit; }
 
 .eyebrow { margin: 0 0 15px; color: var(--green); }
 .eyebrow-dot { width: 7px; height: 7px; margin-right: 7px; display: inline-block; border-radius: 50%; background: var(--gold); vertical-align: 1px; }
-.draft-notice { max-width: 620px; margin: 16px 0 28px; padding: 12px 14px; border: 1px solid var(--gold); color: var(--gold); font-size: 12px; line-height: 1.6; }
-
 h1 {
   margin: 0;
   font-family: var(--serif);
@@ -143,7 +141,7 @@ h1 {
 .detail-art-wrap { position: sticky; top: 24px; padding: 26px; background: #171615; }
 .detail-art { display: block; width: min(100%, 340px); height: auto; margin: 0 auto; object-fit: contain; box-shadow: 4px 8px 22px rgb(32 37 31 / 17%); }
 .detail-copy { padding-top: 8px; }
-.detail-copy .draft-notice { margin: 0 0 18px; }
+
 .detail-copy h1 { font-size: 54px; line-height: 1.08; }
 .detail-description { margin: 18px 0 28px; color: #d0ccc3; font-size: 14px; line-height: 1.8; white-space: pre-line; }
 .detail-label { margin: 0 0 12px; color: var(--muted); }
