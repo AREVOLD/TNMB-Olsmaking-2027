@@ -1,4 +1,4 @@
-const CACHE_NAME = 'flaskelista-2027-v9';
+const CACHE_NAME = 'flaskelista-2027-v10';
 const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/beer.png', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
 
 self.addEventListener('install', (event) => {
