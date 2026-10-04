@@ -227,7 +227,24 @@ window.setInterval(updateCountdown, 60 * 60 * 1000);
 if (isIosDevice && !navigator.standalone) installButton.hidden = false;
 
 if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch((error) => console.error('Service worker kunne ikke registreres:', error));
+  window.addEventListener('load', async () => {
+    try {
+      const registration = await navigator.serviceWorker.register('./sw.js');
+
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
+
+      if (registration.waiting) {
+        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+      }
+
+      await registration.update();
+      window.setInterval(() => {
+        registration.update().catch(() => {});
+      }, 60 * 60 * 1000);
+    } catch (error) {
+      console.error('Service worker kunne ikke registreres:', error);
+    }
   });
 }
