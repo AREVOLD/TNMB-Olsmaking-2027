@@ -68,7 +68,6 @@ const homeView = document.querySelector('#home-view');
 const detailView = document.querySelector('#detail-view');
 const toast = document.querySelector('#toast');
 const installButton = document.querySelector('#install-button');
-const countdownPrefix = document.querySelector('#countdown-prefix');
 const countdownNumber = document.querySelector('#countdown-number');
 const countdownSuffix = document.querySelector('#countdown-suffix');
 const isIosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
@@ -88,15 +87,12 @@ function updateCountdown() {
   const daysRemaining = Math.ceil((eventDate - today) / 86400000);
 
   if (daysRemaining > 0) {
-    countdownPrefix.textContent = 'Det er';
     countdownNumber.textContent = String(daysRemaining);
-    countdownSuffix.textContent = `dag${daysRemaining === 1 ? '' : 'er'} igjen til ølsmakingen`;
+    countdownSuffix.textContent = `${daysRemaining === 1 ? 'dag' : 'dager'} igjen til TNMB Ølsmaking 2027!`;
   } else if (daysRemaining === 0) {
-    countdownPrefix.textContent = '';
     countdownNumber.textContent = 'I dag';
     countdownSuffix.textContent = 'er det ølsmaking!';
   } else {
-    countdownPrefix.textContent = '';
     countdownNumber.textContent = 'Ølsmakingen er gjennomført';
     countdownSuffix.textContent = '';
   }
