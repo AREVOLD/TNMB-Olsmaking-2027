@@ -132,6 +132,13 @@ function renderList() {
 }
 
 function renderDetail(beer) {
+  const untappdLink = beer.untappd ? `
+    <a class="untappd-link" href="${beer.untappd}" target="_blank" rel="noreferrer noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      Se på Untappd
+    </a>
+  ` : '';
+
   detailView.innerHTML = `
     <button class="back-button" type="button" id="back-button">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6M9 12h11"/></svg>
@@ -150,6 +157,7 @@ function renderDetail(beer) {
           <div class="fact"><dt>Brygger</dt><dd>${beer.brewer || ''}</dd></div>
           <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
         </dl>
+        ${untappdLink}
       </article>
     </div>`;
   homeView.hidden = true;
