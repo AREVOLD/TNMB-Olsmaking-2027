@@ -23,11 +23,10 @@ Musikken gir ølet en ekstra dimensjon: de atmosfæriske gitarlinjene fremhever 
     untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-jester-haze/6905577'
   },
   {
-    id: 'wheat-train', name: 'ØL 4', style: 'ØLTYPE', abv: '6.6%', temperature: '6–8°C', brewed: '11.07.2026', batch: '',
-    image: 'images/beer.png', palette: ['#c59545', '#4c3c29'], symbol: '✶',
-    soundtrack: 'Her hadde tradisjonell tysk ompamusikk og tyrolerstemning passet perfekt, men det får dere ikke i kveld! I stedet ruller Wheat Train videre med de tyske thrash metal-legendene i Tankard. Med sitt intense tempo og kompromissløse fokus på fest, moro og ren øl-kjærlighet, leverer de det ultimate lydsporet til dette brygget. Ingen tyrolerhatter, bare pur metal!',
-    description: 'Klassisk tysk hveteøl med myk munnfølelse, tydelige bananestere og lett krydret fruktighet. En lys og leken weissbier i ren stil.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-wheat-train/6699679'
+    id: 'mango-massacre', name: 'Mango Massacre', style: 'Sour Slush / Fruited Sour', abv: '5.4%', temperature: '-4 til -2°C', brewed: '', batch: '', brewer: 'Are Volden',
+    image: 'images/beer_04.jpg', palette: ['#c59545', '#4c3c29'], symbol: '✶',
+    soundtrack: 'Insanity Alert leverer det eneste rette lydsporet til dette frosne kaoset. En intens, lynrask og fullstendig gal blanding av crossover thrash og pur energi som matcher den syrlige mango-eksplosjonen i glasset.',
+    description: 'Født i syre. Gjenoppstått i kaos. En tropisk vederstyggelighet som river gjennom sansene og etterlater seg ingenting annet enn frossen masse i sitt kjølvann.\nDette er første spor i TNMB Slush Series, et øl som er kompromissløst tenkt, brygget og modnet for slushmaskinen hele veien. Vørteren er syrnet hardt og kaldt for en knallhard, crisp profil, før den er stappet full med hele 4,25 kilo ren mangopuré. Resultatet er en ekstremt saftig, syrlig og iskald tropisk eksplosjon som slushes rett før servering.'
   },
   {
     id: 'the-apple-freak', name: 'ØL 5', style: 'ØLTYPE', abv: '6.6%', temperature: '4–6°C', brewed: '', batch: '',
@@ -141,14 +140,14 @@ function renderDetail(beer) {
       <div class="detail-art-wrap"><img class="detail-art" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}"></div>
       <article class="detail-copy">
         <h1>${beer.name}</h1>
-        <p class="detail-description">Her legges det inn en beskrivelse av ølet.</p>
+        <p class="detail-description">${beer.description}</p>
         <dl class="facts">
-          <div class="fact"><dt>Øltype</dt><dd>Øltype</dd></div>
-          <div class="fact"><dt>Alkohol</dt><dd>6.6%</dd></div>
-          <div class="fact"><dt>Servering</dt><dd>4-6°C</dd></div>
-          <div class="fact"><dt>Bryggedato</dt><dd>DD.MM.YYYY</dd></div>
-          <div class="fact"><dt>Brygger</dt><dd></dd></div>
-          <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>Her legges det inn en beskrivelse av musikkvalget og hvorfor akkurat denne musikken parres med ølet.</dd></div>
+          <div class="fact"><dt>Øltype</dt><dd>${beer.style}</dd></div>
+          <div class="fact"><dt>Alkohol</dt><dd>${beer.abv}</dd></div>
+          <div class="fact"><dt>Servering</dt><dd>${beer.temperature}</dd></div>
+          <div class="fact"><dt>Bryggedato</dt><dd>${beer.brewed}</dd></div>
+          <div class="fact"><dt>Brygger</dt><dd>${beer.brewer || ''}</dd></div>
+          <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
         </dl>
       </article>
     </div>`;
