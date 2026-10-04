@@ -1,4 +1,4 @@
-const CACHE_NAME = 'flaskelista-2027-v1';
+const CACHE_NAME = 'flaskelista-2027-v2';
 const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/forge-of-the-nutons.jpg', './images/black-arts-and-alchemy.jpg', './images/the-apple-freak.jpg', './images/wheat-train.jpg', './images/jester-haze.jpg', './images/zest-in-peace.jpg', './images/messe-noir.jpg', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
 
 self.addEventListener('install', (event) => {
@@ -15,6 +15,18 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        }
+        return response;
+      }).catch(() => caches.match(event.request).then((cached) => cached || caches.match('./index.html')))
+    );
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
       if (response.ok) {
