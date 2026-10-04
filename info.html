@@ -21,7 +21,12 @@
       }
       .info-card h1 {
         margin: 0 0 12px;
-        font-size: clamp(2.2rem, 5vw, 4rem);
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+      .info-card h2 {
+        margin: 28px 0 10px;
+        font-family: var(--serif);
+        font-size: 1.4rem;
       }
       .info-card p,
       .info-card li {
@@ -32,6 +37,12 @@
       .info-card ul {
         margin: 18px 0 0;
         padding-left: 1.2rem;
+      }
+      .info-card .schedule {
+        margin-top: 0;
+      }
+      .info-card .schedule li + li {
+        margin-top: 8px;
       }
       .back-link {
         display: inline-block;
@@ -56,11 +67,20 @@
         <h1>Tidsplan og praktisk info</h1>
         <p><strong>Sted:</strong> Hen Grendehus</p>
         <p><strong>Tid:</strong> 16.10.2027</p>
-        <p>Dette er en foreløpig arbeidsutkastsside. Ølliste og opplysninger er kopiert fra 2026 og er ikke bekreftet for 2027.</p>
+        <p>TNMB er stolte av nok en gang å kunne invitere til ølsmaking på Hen Grendehus, lørdag 16. oktober 2027. Vi serverer smaksprøver av totalt 7–8 enheter.</p>
+
+        <h2>Tidsplan</h2>
+        <ul class="schedule">
+          <li><strong>18:00</strong> – Dørene åpner. Registrering i døren, avkrysning på liste og utdeling av lodd til kveldens trekning.</li>
+          <li><strong>18:30</strong> – Ølsmakingen starter i storsalen.</li>
+          <li><strong>Etter smakingen</strong> – Samling i baren for de som ønsker det.</li>
+          <li><strong>23:30</strong> – Baren stenger.</li>
+        </ul>
+
+        <h2>Greit å vite</h2>
         <ul>
-          <li>Kom tidlig for å få med deg introen og første runde.</li>
-          <li>Ta med egen flaske eller glass dersom du vil ha noe eget med deg.</li>
-          <li>Mer detaljert innhold oppdateres når arrangementet er bekreftet.</li>
+          <li><strong>Kiosk:</strong> Det blir salg av pølser, kaffe og enkel snacks.</li>
+          <li><strong>Drikke etterpå:</strong> Medbrakt. Hver enkelt tar med egen drikke til samlingen i baren etter selve smakingen.</li>
         </ul>
         <a class="back-link" href="index.html">← Tilbake til forsiden</a>
       </section>
