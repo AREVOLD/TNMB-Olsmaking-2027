@@ -115,7 +115,7 @@ function renderDetail(beer) {
       <div class="detail-art-wrap"><img class="detail-art" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}"></div>
       <article class="detail-copy">
         <h1>${beer.name}</h1>
-        <p class="detail-description">Midlertidig spor. Her legges det inn en beskrivelse av ølet.</p>
+        <p class="detail-description">Her legges det inn en beskrivelse av ølet.</p>
         <dl class="facts">
           <div class="fact"><dt>Øltype</dt><dd>Øltype</dd></div>
           <div class="fact"><dt>Alkohol</dt><dd>6.6%</dd></div>
