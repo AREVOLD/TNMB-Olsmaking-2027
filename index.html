@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Arbeidsutkast for TNMB Ølsmaking 2027.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="TNMB 2027">
+    <title>TNMB Ølsmaking | 2027</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/tnmb.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ølsmaking, hjem">
+        <img class="brand-mark" src="images/tnmb.png" alt="">
+        <span>Ølliste</span>
+      </a>
+      <button class="install-button" id="install-button" type="button" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
+        <span>Installer</span>
+      </button>
+    </header>
+
+    <main id="app" class="page-shell">
+      <section id="home-view" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> TNMB ØLSMAKING 2027</p>
+          <h1 id="page-title">TNMB ØLSMAKING 2027</h1>
+          <p class="draft-notice">ARBEIDSUTKAST: Øllisten og informasjonen er kopiert fra 2026 og er ikke bekreftet for 2027.</p>
+          <div class="list-meta">
+            <span>ARBEIDSUTKAST</span>
+            <span id="beer-count">08 ØL</span>
+          </div>
+        </div>
+        <section class="beer-list" id="beer-list" aria-label="Øl i årets smaking"></section>
+        <footer class="list-footer"><span>2027&nbsp; · &nbsp;TNMB</span><span>ARBEIDSUTKAST</span></footer>
+      </section>
+
+      <section id="detail-view" class="detail-view" hidden aria-live="polite"></section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>

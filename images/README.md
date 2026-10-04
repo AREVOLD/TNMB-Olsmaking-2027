@@ -1,0 +1,1 @@
+Last opp etiketten som `prince-of-darkness.jpg` i denne mappen. Appen viser en generert reserveetikett frem til bildet er tilgjengelig.
