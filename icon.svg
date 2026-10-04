@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="108" fill="#345d43"/>
-  <circle cx="256" cy="256" r="180" fill="none" stroke="#e2ba68" stroke-width="10"/>
-  <circle cx="256" cy="256" r="158" fill="none" stroke="#e2ba68" stroke-opacity=".48" stroke-width="2"/>
-  <text x="256" y="309" fill="#fffaf0" font-family="Georgia,serif" font-size="184" text-anchor="middle">Ø</text>
-</svg>
