@@ -155,6 +155,7 @@ h1 {
 .beer-abv { display: inline-block; margin-top: 11px; padding: 4px 7px; border: 1px solid #57564d; border-radius: 2px; color: var(--green); font-size: 12px; font-weight: 700; }
 .card-arrow { position: absolute; top: 50%; right: 4px; color: #b2aca1; font-size: 18px; transform: translateY(-50%); }
 .list-footer { display: flex; justify-content: space-between; margin-top: 25px; padding: 0 0 36px; color: var(--muted); font-size: 9px; }
+.list-footer span:first-child { color: #fff; }
 
 .detail-view { padding: 27px 0 64px; }
 .back-button { display: inline-flex; align-items: center; gap: 7px; padding: 8px 0; border: 0; background: transparent; cursor: pointer; font-size: 12px; font-weight: 600; }
