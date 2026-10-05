@@ -111,6 +111,10 @@ h1 {
 
 .intro-copy { max-width: 380px; margin: 16px 0 35px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .list-meta { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+.contact-section { padding-top: 25px; }
+.contact-section .list-meta { margin: 0 0 14px; }
+.contact-section p { margin: 0 0 8px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.contact-section a { color: var(--green); font-size: 14px; }
 
 .beer-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
 
