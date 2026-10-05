@@ -24,7 +24,7 @@ Musikken gir ølet en ekstra dimensjon: de atmosfæriske gitarlinjene fremhever 
   },
   {
     id: 'mango-massacre', name: 'Mango Massacre', style: 'Sour Slush / Fruited Sour', abv: '5.4%', temperature: '-4 til -2°C', brewed: '', batch: '', brewer: 'Are Volden',
-    image: 'images/beer_04.jpg', palette: ['#c59545', '#4c3c29'], symbol: '✶',
+    image: 'images/mango-massacre.jpg', palette: ['#c59545', '#4c3c29'], symbol: '✶',
     soundtrack: 'Insanity Alert leverer det eneste rette lydsporet til dette frosne kaoset. En intens, lynrask og fullstendig gal blanding av crossover thrash og pur energi som matcher den syrlige mango-eksplosjonen i glasset.',
     description: 'Født i syre. Gjenoppstått i kaos. En tropisk vederstyggelighet som river gjennom sansene og etterlater seg ingenting annet enn frossen masse i sitt kjølvann.\nDette er første spor i TNMB Slush Series, et øl som er kompromissløst tenkt, brygget og modnet for slushmaskinen hele veien. Vørteren er syrnet hardt og kaldt for en knallhard, crisp profil, før den er stappet full med hele 4,25 kilo ren mangopuré. Resultatet er en ekstremt saftig, syrlig og iskald tropisk eksplosjon som slushes rett før servering.',
     untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-mango-massacre/6781994'
