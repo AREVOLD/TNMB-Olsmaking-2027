@@ -1,26 +1,24 @@
 const beers = [
   {
-    id: 'zest-in-peace', name: 'ØL 1', style: 'ØLTYPE', abv: '6.6%', temperature: '4–6°C', brewed: '30.08.2026', batch: '',
-    soundtrack: 'En lys og lett Kölsch som glir ned like ukomplisert som en klassisk Jokke låt. Hintet av appelsin gir akkurat den lille oppturen du trenger, og minner deg på at livet rusler videre selv når det går litt på tverke. Akkurat som Jokke & Valentinerne fanger dette brygget den perfekte balansen mellom det bittersøte og det genuint oppløftende. Ingen jålete fakter, bare ekte vare.',
+    id: 'zest-in-peace', name: 'ØL 1', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#bd653d', '#f3d28b'], symbol: '☼',
-    description: 'Zest in Peach er en lys og ren Kölsch brygget med et forsiktig hint av appelsinskall og ferskenpuré. Frukten ligger lavt i miksen og løfter ølet uten å ta over, mens en klassisk tysk malt‑ og humleprofil holder det hele stramt, friskt og lettdrikkelig. Gjæret kjølig med Köln‑gjær for en crisp og ren avslutning. En subtil, leken vri på en tradisjonell Kölsch.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-zest-in-peace/6699680'
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'messe-noir', name: 'ØL 2', style: 'ØLTYPE', abv: '6.6%', temperature: '4–6°C', brewed: '22.08.2026', batch: '',
+    id: 'messe-noir', name: 'ØL 2', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#29242a', '#bc4f48'], symbol: '✦',
-    soundtrack: 'Et kullsvarte brygg krever musikk som graver dypt i de mørkeste ritualer. Valget faller på hypnotisk og messende black metal i gaten til Rotting Christ. Med tunge, okkulte rytmer og en messende, teatralsk atmosfære, fungerer dette lydsporet som en sonisk messe som utfyller den intense og mystiske karakteren til ølet.',
-    description: 'En klassisk, mørk og elegant tysk Schwarzbier brygget for maksimal lettdrikkelighet. På tross av sitt dype, mørke utseende har ølet en overraskende lett, tørr og forfriskende karakter. Den brente malten gir delikate og rene toner av kaffe og mørk sjokolade i bakgrunnen, helt uten den tunge sødmen du finner i en stout. En crisp og velbalansert opplevelse som beviser at mørkt øl kan være lettdrikkelig.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-messe-noir/6844617'
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'jester-haze', name: 'ØL 3', style: 'ØLTYPE', abv: '6.6%', temperature: '6–8°C', brewed: '05.09.2026', batch: '',
-    soundtrack: `En juicy NEPA kler den melodiske, drivende energien fra The Jester Race perfekt. De tåkete, tropiske tonene i ølet speiler albumets blanding av melodi og råskap – et møte mellom lys og mørke. Når du løfter glasset, passer det med låter som bygger seg opp i lag, akkurat som ølets fruktige aroma og myke munnfølelse.
-
-Musikken gir ølet en ekstra dimensjon: de atmosfæriske gitarlinjene fremhever den saftige fruktigheten, mens de rytmiske partiene gir en kontrast som gjør hver slurk mer intens. Dette er kombinasjonen som får både øl og album til å skinne – melodisk, energisk og fylt av karakter.`,
+    id: 'jester-haze', name: 'ØL 3', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#4b6650', '#e0b857'], symbol: '☀',
-    description: 'En lettdrikkelig og hazy New England Pale Ale. En god dose Citra og Mosaic skyller over sansene med tydelige, intense smaker av moden mango, pasjonsfrukt og sitrus. Brygget har en silkemyk munnfølelse og minimal bitterhet, noe som gjør dette til en saftig, fruktig og forfriskende opplevelse i glasset.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-jester-haze/6905577'
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
     id: 'mango-massacre', name: 'Mango Massacre', style: 'Sour Slush / Fruited Sour', abv: '5.4%', temperature: '-4 til -2°C', brewed: '', batch: '', brewer: 'Are Volden',
@@ -30,40 +28,37 @@ Musikken gir ølet en ekstra dimensjon: de atmosfæriske gitarlinjene fremhever 
     untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-mango-massacre/6781994'
   },
   {
-    id: 'the-apple-freak', name: 'ØL 5', style: 'ØLTYPE', abv: '6.6%', temperature: '4–6°C', brewed: '', batch: '',
-    soundtrack: 'Avatar passer perfekt til denne sideren, spesielt den teatralske, mørke freakshow‑energien fra de tidlige albumene. Den rå, sirkus‑aktige metalstilen matcher uttrykket til sideren.',
+    id: 'the-apple-freak', name: 'ØL 5', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#465a3a', '#d8a245'], symbol: '✦',
-    description: 'En kompromissløs og 100 % naturlig håndverkssider hvor absolutt alt er sanket, presset og bearbeidet for hånd. Sideren er gjæret på tradisjonell norsk Kveik-gjær, noe som gir en unik og karakterfull dybde til den friske frukten. Resultatet er et vilt, ærlig og dønn ekte brygg, stappfullt av saftig eplesmak og rå lidenskap.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-the-apple-freak/6844554'
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'black-arts-and-alchemy', name: 'ØL 6', style: 'ØLTYPE', abv: '6.6%', temperature: '8–12°C', brewed: '12.04.2026', batch: '',
+    id: 'black-arts-and-alchemy', name: 'ØL 6', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#352320', '#d1a165'], symbol: '◇',
-    soundtrack: "Hellripper leverer den perfekte lyden til dette brygget. En eksplosjon av lynrask og skitten black 'n' roll som gir akkurat det rette, mørke drivet til dette ølet.",
-    description: 'En mørk og maltfokusert porter. Forvent toner av brent kakao, karamell og et subtilt hint av toffee, vakkert balansert av milde og jordaktige toner fra humlen. En fløyelsmyk fylde, moderat bitterhet og mørk i fargen. En klassisk, men karaktersterk engelsk porter.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-black-arts-and-alchemy/6522872'
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'forge-of-the-nutons', name: 'ØL 7', style: 'ØLTYPE', abv: '6.6%', temperature: '8–12°C', brewed: '12.08.2026', batch: '',
+    id: 'forge-of-the-nutons', name: 'ØL 7', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#343332', '#d19e4b'], symbol: '⚒',
-    soundtrack: 'Batushka leverer det perfekte lydsporet til denne episke trippelen. En fengende, men dypt ritualistisk blanding av tunge black metal-riff og messende munker. Musikken drar linjene direkte tilbake til ølstilens klosteropphav, bare med et bekmørkt og monumentalt slør som kler de massive 10 prosentene i glasset.',
-    description: 'En mektig og dypgyllen belgisk trippel som klokker inn på solide 10 % alkohol. Brygget er preget av en kompleks og tradisjonsrik belgisk gjærprofil som leverer herlige toner av krydder og fruktige estere. På tross av sin massive styrke har den en elegant, tørr og varmende avslutning med en velbalansert bitterhet.',
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-forge-of-the-nutons/6918664'
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'prince-of-darkness', name: 'ØL 8', style: 'ØLTYPE', abv: '6.6%', temperature: '12–16°C', brewed: '15.11.2025', batch: '128',
-    soundtrack: 'Prince of Darkness kler mørk og dramatisk musikk med stor atmosfære, akkurat den typen uttrykk som definerer Ozzy Osbourne. Mr. Crowley passer utmerket med sin episke, mørke stemning. Roligere og mer følelsesladde Ozzy‑låter gir en perfekt kontrast til ølets tunge og mørke karakter.',
+    id: 'prince-of-darkness', name: 'ØL 8', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '128', brewer: '[BRYGGER]',
+    soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#211e24', '#d6b66c'], symbol: '✦',
-    description: `Dette er ikke bare et øl, det er en gjenoppstandelse. Et brygg til ære for Prince of Darkness, Ozzy Osbourne. En flytende hyllest til heavy metal-gudfaren, smidd i flammene av en intens imperial stout og belgisk åndelig dybde.
-
-Brygget med brent malt, mørk kandissirup og whiskymarinert eik, bærer det vekten av skyggene og et snev av galskap. Gjæret med både kloster- og champagnegjær, og deretter lagret i flere måneder, fremstår det som en mørk besvergelse, kraftfullt og komplekst.
-
-Forvent bølger av sjokolade, brent karamell og espresso, gjennomboret av hjemsøkende estere og et hint av krydder. Eiken tilfører en ritualistisk dybde, mens den høye alkoholprosenten leverer et slag verdig et skrik fra scenekanten.`,
-    untappd: 'https://untappd.com/b/tnmb-true-norwegian-metal-brewers-prince-of-darkness/6637040'
+    description: '[Her skal beskrivelse av ølen inn.]',
+    untappd: 'https://untappd.com/TNMB'
   }
 ];
 
 const beerList = document.querySelector('#beer-list');
+const buckList = document.querySelector('#buck-list');
 const homeView = document.querySelector('#home-view');
 const detailView = document.querySelector('#detail-view');
 const toast = document.querySelector('#toast');
@@ -129,6 +124,16 @@ function renderList() {
       </span>
       <span class="card-arrow" aria-hidden="true">→</span>
     </button>`).join('');
+}
+
+function renderBuckList() {
+  buckList.innerHTML = Array.from({ length: 10 }, (_, index) => `
+    <article class="beer-card buck-beer-card">
+      <img class="label-thumb" src="images/beer.png" alt="Øletikett">
+      <span class="beer-copy">
+        <span class="beer-name">ØL ${index + 1}</span>
+      </span>
+    </article>`).join('');
 }
 
 function renderDetail(beer) {
@@ -221,6 +226,7 @@ window.addEventListener('hashchange', () => {
 });
 
 renderList();
+renderBuckList();
 updateCountdown();
 window.setInterval(updateCountdown, 60 * 60 * 1000);
 
