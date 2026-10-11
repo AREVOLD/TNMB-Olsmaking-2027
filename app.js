@@ -57,6 +57,21 @@ const beers = [
   }
 ];
 
+const buckBeers = Array.from({ length: 10 }, (_, index) => ({
+  id: `buck-beer-${index + 1}`,
+  name: `ØL ${index + 1}`,
+  style: '[ØLTYPE]',
+  abv: '[ABV]',
+  temperature: '4–6°C',
+  brewed: 'DD.MM.20YY',
+  brewer: '[BRYGGER]',
+  soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
+  description: '[Her skal beskrivelse av ølen inn.]',
+  image: 'images/beer.png',
+  palette: ['#bd653d', '#f3d28b'],
+  symbol: '☼'
+}));
+
 const beerList = document.querySelector('#beer-list');
 const buckList = document.querySelector('#buck-list');
 const homeView = document.querySelector('#home-view');
@@ -113,8 +128,8 @@ function useLabelFallback(event) {
   delete image.dataset.fallback;
 }
 
-function renderList() {
-  beerList.innerHTML = beers.map((beer) => `
+function renderBeerCards(list, items) {
+  list.innerHTML = items.map((beer) => `
     <button class="beer-card" type="button" data-beer-id="${beer.id}" aria-label="Vis detaljer for ${beer.name}">
       <img class="label-thumb" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}">
       <span class="beer-copy">
@@ -126,14 +141,12 @@ function renderList() {
     </button>`).join('');
 }
 
+function renderList() {
+  renderBeerCards(beerList, beers);
+}
+
 function renderBuckList() {
-  buckList.innerHTML = Array.from({ length: 10 }, (_, index) => `
-    <article class="beer-card buck-beer-card">
-      <img class="label-thumb" src="images/beer.png" alt="Øletikett">
-      <span class="beer-copy">
-        <span class="beer-name">ØL ${index + 1}</span>
-      </span>
-    </article>`).join('');
+  renderBeerCards(buckList, buckBeers);
 }
 
 function renderDetail(beer) {
@@ -184,14 +197,18 @@ function showToast(message) {
   toastTimeout = window.setTimeout(() => toast.classList.remove('visible'), 4200);
 }
 
-beerList.addEventListener('click', (event) => {
+function openBeerDetail(event) {
   const card = event.target.closest('[data-beer-id]');
   if (!card) return;
-  const beer = beers.find((item) => item.id === card.dataset.beerId);
+  const beer = beers.find((item) => item.id === card.dataset.beerId)
+    || buckBeers.find((item) => item.id === card.dataset.beerId);
   if (beer) renderDetail(beer);
-});
+}
 
+beerList.addEventListener('click', openBeerDetail);
+buckList.addEventListener('click', openBeerDetail);
 beerList.addEventListener('error', useLabelFallback, true);
+buckList.addEventListener('error', useLabelFallback, true);
 detailView.addEventListener('error', useLabelFallback, true);
 
 detailView.addEventListener('click', (event) => {

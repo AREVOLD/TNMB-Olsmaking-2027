@@ -140,9 +140,6 @@ h1 {
 
 .beer-card:hover { background: rgb(168 189 139 / 10%); }
 .beer-card:active { transform: scale(.99); }
-.buck-beer-card { cursor: default; }
-.buck-beer-card:hover { background: transparent; }
-.buck-beer-card:active { transform: none; }
 .beer-card:focus-visible, .back-button:focus-visible, .install-button:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
 .label-thumb {
