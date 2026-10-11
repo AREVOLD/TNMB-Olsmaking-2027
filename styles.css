@@ -111,9 +111,9 @@ h1 {
 
 .intro-copy { max-width: 380px; margin: 16px 0 35px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .list-meta { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
-.intro > .list-meta { padding: 12px 15px; border-bottom: 0; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
-.buck-section { margin-top: 25px; }
-.buck-section-title { margin: 0; padding: 12px 15px; border: 0; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
+.setlist-section { padding: 0 15px 15px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
+.setlist-section + .setlist-section { margin-top: 25px; }
+.setlist-title { margin: 0; padding: 12px 0; }
 .contact-section { margin-top: 25px; padding: 15px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
 .contact-section .list-meta { margin: 0 0 14px; }
 .contact-section p { margin: 0 0 8px; color: #fff; font-size: 14px; line-height: 1.65; }
