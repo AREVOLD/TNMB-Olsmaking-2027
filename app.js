@@ -57,7 +57,7 @@ const beers = [
   }
 ];
 
-const buckBeers = Array.from({ length: 10 }, (_, index) => ({
+const buckBeers = Array.from({ length: 8 }, (_, index) => ({
   id: `buck-beer-${index + 1}`,
   name: `ØL ${index + 1}`,
   style: '[ØLTYPE]',
