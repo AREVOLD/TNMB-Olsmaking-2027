@@ -75,17 +75,17 @@ button { color: inherit; }
 .page-shell { width: min(100% - 48px, 1024px); margin: 0 auto; }
 #app { flex: 1; display: flex; flex-direction: column; }
 #home-view { flex: 1; display: flex; flex-direction: column; }
-#home-view > .list-footer,
 .detail-view > .list-footer,
 body > .list-footer { margin-top: auto; }
+#home-view > .list-footer { margin-top: 72px; }
 .info-page,
 .tickets-page { flex: 1; }
-.intro { padding: 32px 0 25px; }
+.intro { padding: 32px 0 10px; }
 .event-details { margin-bottom: 25px; padding: 15px; border-left: 4px solid #fb0101; border-radius: 8px; background: #111; }
 .event-details p { display: grid; grid-template-columns: 72px 1fr; margin: 0 0 5px; font-size: 1.1rem; }
 .event-details p:last-of-type { margin-bottom: 0; }
 .event-details .schedule-button { margin: 14px 0 2px; padding: 11px 14px; font-size: .85rem; }
-.countdown { margin: -12px 0 25px; padding: 12px 15px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px; border-left: 4px solid #fb0101; border-radius: 8px; background: #111; color: var(--ink); font-size: 1rem; line-height: 1.5; }
+.countdown { margin: -12px 0 10px; padding: 12px 15px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px; border-left: 4px solid #fb0101; border-radius: 8px; background: #111; color: var(--ink); font-size: 1rem; line-height: 1.5; }
 .countdown strong { color: #fb0101; font-size: 1.25rem; }
 
 .eyebrow, .list-meta, .list-footer, .detail-label {
@@ -219,6 +219,7 @@ h1 {
 
 .detail-view { flex: 1; padding: 27px 0 64px; }
 .detail-view:not([hidden]) { display: flex; flex-direction: column; }
+.detail-view > .subpage-back-link { align-self: flex-start; }
 .detail-layout { display: grid; grid-template-columns: minmax(220px, 0.83fr) minmax(0, 1.17fr); gap: clamp(32px, 8vw, 92px); align-items: start; margin-top: 24px; }
 .detail-art-wrap { position: sticky; top: 24px; padding: 26px; background: #171615; }
 .detail-art { display: block; width: min(100%, 340px); height: auto; margin: 0 auto; object-fit: contain; box-shadow: 4px 8px 22px rgb(32 37 31 / 17%); }
