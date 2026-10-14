@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tnmb-2027-v23';
+const CACHE_NAME = 'tnmb-2027-v24';
 const APP_SHELL = ['./', './index.html', './info.html', './billetter.html', './styles.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/beer.png', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
 
 self.addEventListener('install', (event) => {
