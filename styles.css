@@ -97,7 +97,7 @@ h1 {
 .intro > h1 { margin-bottom: 0; }
 .home-tagline {
   max-width: 760px;
-  margin: 12px 0 35px;
+  margin: 12px 0 16px;
   color: var(--tnmb-red);
   font-family: Impact, 'Arial Black', sans-serif;
   font-size: clamp(1.4rem, 2.5vw, 2.5rem);
@@ -106,6 +106,26 @@ h1 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+.ticket-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  padding: 14px 20px;
+  border-radius: 6px;
+  background: var(--tnmb-red);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.ticket-button:hover { background: #d90000; }
+.ticket-button:active { transform: scale(.98); }
+.ticket-button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
 
 
