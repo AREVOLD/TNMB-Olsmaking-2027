@@ -83,7 +83,7 @@ button { color: inherit; }
   font-weight: 700;
 }
 
-.eyebrow, .list-meta { font-size: 12px; }
+.eyebrow, .list-meta { font-size: 16px; }
 .eyebrow { margin: 0 0 15px; color: var(--green); }
 .eyebrow-dot { width: 7px; height: 7px; margin-right: 7px; display: inline-block; border-radius: 50%; background: var(--gold); vertical-align: 1px; }
 h1 {
