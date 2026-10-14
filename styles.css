@@ -137,7 +137,8 @@ h1 {
 .ticket-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .ticket-card { min-width: 0; padding: 20px 24px 24px; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid #383331; border-top: 4px solid var(--tnmb-red); border-radius: 10px; background: #111; transition: box-shadow 180ms ease, transform 180ms ease; }
 .ticket-card h2 { min-height: 2.7em; margin: 0; font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.35; }
-.ticket-recommendation { margin: 4px 0 2px; padding: 4px 8px; border: 1px solid rgb(217 164 78 / 40%); border-radius: 999px; color: var(--gold); font-size: .75rem; font-weight: 700; }
+.ticket-recommendation, .ticket-recommendation-placeholder { min-height: 24px; margin: 0 0 2px; padding: 3px 8px; display: inline-flex; align-items: center; border: 1px solid rgb(217 164 78 / 40%); border-radius: 999px; color: var(--gold); font-size: .75rem; font-weight: 700; }
+.ticket-recommendation-placeholder { visibility: hidden; }
 .ticket-price { margin: 2px 0 4px; color: var(--muted); font-size: 1rem; }
 .ticket-price span { color: #fff; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.04em; }
 .ticket-note { margin: 0 0 24px; color: var(--muted); font-size: .9rem; line-height: 1.5; }
