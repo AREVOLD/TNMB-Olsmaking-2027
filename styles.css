@@ -159,7 +159,7 @@ h1 {
 .list-meta { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
 .setlist-section { padding: 0 15px 15px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
 .setlist-section + .setlist-section { margin-top: 25px; }
-.setlist-title { margin: 0; padding: 12px 0; font-size: 16px; }
+.setlist-title { margin: 0; padding: 12px 0; font-size: 24px; }
 .contact-section { margin-top: 25px; padding: 15px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
 .contact-section .list-meta { margin: 0 0 14px; }
 .contact-section p { margin: 0 0 8px; color: #fff; font-size: 14px; line-height: 1.65; }
