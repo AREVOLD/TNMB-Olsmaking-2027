@@ -152,12 +152,12 @@ function renderBuckList() {
 function renderDetail(beer) {
   const untappdLink = beer.untappd ? `
     <a class="untappd-link" href="${beer.untappd}" target="_blank" rel="noreferrer noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-      Untappd
+      🍺 Åpne i Untappd ↗
     </a>
   ` : '';
 
   detailView.innerHTML = `
+    <a class="subpage-back-link" href="index.html">← Tilbake til forsiden</a>
     <button class="back-button" type="button" id="back-button">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6M9 12h11"/></svg>
       Alle øl
@@ -166,6 +166,7 @@ function renderDetail(beer) {
       <div class="detail-art-wrap"><img class="detail-art" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}"></div>
       <article class="detail-copy">
         <h1>${beer.name}</h1>
+        ${untappdLink}
         <p class="detail-description">${beer.description}</p>
         <dl class="facts">
           <div class="fact"><dt>Øltype</dt><dd>${beer.style}</dd></div>
@@ -175,7 +176,6 @@ function renderDetail(beer) {
           <div class="fact"><dt>Brygger</dt><dd>${beer.brewer || ''}</dd></div>
           <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
         </dl>
-        ${untappdLink}
       </article>
     </div>`;
   homeView.hidden = true;
