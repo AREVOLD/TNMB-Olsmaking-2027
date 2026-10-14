@@ -18,6 +18,9 @@
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
@@ -70,6 +73,13 @@ button { color: inherit; }
 
 .install-button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .page-shell { width: min(100% - 48px, 1024px); margin: 0 auto; }
+#app { flex: 1; display: flex; flex-direction: column; }
+#home-view { flex: 1; display: flex; flex-direction: column; }
+#home-view > .list-footer,
+.detail-view > .list-footer,
+body > .list-footer { margin-top: auto; }
+.info-page,
+.tickets-page { flex: 1; }
 .intro { padding: 54px 0 25px; }
 .event-details { margin-bottom: 25px; padding: 15px; border-left: 4px solid #fb0101; border-radius: 8px; background: #111; }
 .event-details p { display: grid; grid-template-columns: 72px 1fr; margin: 0 0 5px; font-size: 1.1rem; }
@@ -206,7 +216,8 @@ h1 {
 .list-footer { display: flex; justify-content: space-between; margin-top: 25px; padding: 0 0 36px; color: var(--muted); font-size: 9px; }
 .list-footer span:first-child { color: #fff; }
 
-.detail-view { padding: 27px 0 64px; }
+.detail-view { flex: 1; padding: 27px 0 64px; }
+.detail-view:not([hidden]) { display: flex; flex-direction: column; }
 .detail-layout { display: grid; grid-template-columns: minmax(220px, 0.83fr) minmax(0, 1.17fr); gap: clamp(32px, 8vw, 92px); align-items: start; margin-top: 24px; }
 .detail-art-wrap { position: sticky; top: 24px; padding: 26px; background: #171615; }
 .detail-art { display: block; width: min(100%, 340px); height: auto; margin: 0 auto; object-fit: contain; box-shadow: 4px 8px 22px rgb(32 37 31 / 17%); }
