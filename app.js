@@ -158,10 +158,6 @@ function renderDetail(beer) {
 
   detailView.innerHTML = `
     <a class="subpage-back-link" href="index.html">← Tilbake til forsiden</a>
-    <button class="back-button" type="button" id="back-button">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6M9 12h11"/></svg>
-      Alle øl
-    </button>
     <div class="detail-layout">
       <div class="detail-art-wrap"><img class="detail-art" ${labelImageAttributes(beer)} alt="Etikett for ${beer.name}"></div>
       <article class="detail-copy">
@@ -181,7 +177,7 @@ function renderDetail(beer) {
   homeView.hidden = true;
   detailView.hidden = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.querySelector('#back-button').focus({ preventScroll: true });
+  detailView.querySelector('.subpage-back-link').focus({ preventScroll: true });
 }
 
 function showHome() {
@@ -210,10 +206,6 @@ buckList.addEventListener('click', openBeerDetail);
 beerList.addEventListener('error', useLabelFallback, true);
 buckList.addEventListener('error', useLabelFallback, true);
 detailView.addEventListener('error', useLabelFallback, true);
-
-detailView.addEventListener('click', (event) => {
-  if (event.target.closest('#back-button')) showHome();
-});
 
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
