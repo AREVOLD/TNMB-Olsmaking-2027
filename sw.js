@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tnmb-2027-v18';
+const CACHE_NAME = 'tnmb-2027-v19';
 const APP_SHELL = ['./', './index.html', './billetter.html', './styles.css', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './images/beer.png', './images/tnmb.png', './images/tnmb-192.png', './images/tnmb-512.png'];
 
 self.addEventListener('install', (event) => {
@@ -24,7 +24,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
 
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-cache' })
       .then((response) => {
         if (response && response.ok) {
           const copy = response.clone();
