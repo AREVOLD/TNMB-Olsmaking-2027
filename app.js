@@ -173,7 +173,8 @@ function renderDetail(beer) {
           <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
         </dl>
       </article>
-    </div>`;
+    </div>
+    <footer class="list-footer"><span>2027&nbsp; · &nbsp;TNMB</span><span></span></footer>`;
   homeView.hidden = true;
   detailView.hidden = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
