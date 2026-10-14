@@ -1,20 +1,20 @@
 const beers = [
   {
-    id: 'zest-in-peace', name: 'ØL 1', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-1', name: 'ØL 1', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#bd653d', '#f3d28b'], symbol: '☼',
     description: '[Her skal beskrivelse av ølen inn.]',
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'messe-noir', name: 'ØL 2', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-2', name: 'ØL 2', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#29242a', '#bc4f48'], symbol: '✦',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     description: '[Her skal beskrivelse av ølen inn.]',
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'jester-haze', name: 'ØL 3', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-3', name: 'ØL 3', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#4b6650', '#e0b857'], symbol: '☀',
     description: '[Her skal beskrivelse av ølen inn.]',
@@ -28,28 +28,28 @@ const beers = [
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'the-apple-freak', name: 'ØL 5', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-5', name: 'ØL 5', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#465a3a', '#d8a245'], symbol: '✦',
     description: '[Her skal beskrivelse av ølen inn.]',
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'black-arts-and-alchemy', name: 'ØL 6', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-6', name: 'ØL 6', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#352320', '#d1a165'], symbol: '◇',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     description: '[Her skal beskrivelse av ølen inn.]',
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'forge-of-the-nutons', name: 'ØL 7', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
+    id: 'beer-7', name: 'ØL 7', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '', brewer: '[BRYGGER]',
     image: 'images/beer.png', palette: ['#343332', '#d19e4b'], symbol: '⚒',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     description: '[Her skal beskrivelse av ølen inn.]',
     untappd: 'https://untappd.com/TNMB'
   },
   {
-    id: 'prince-of-darkness', name: 'ØL 8', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '128', brewer: '[BRYGGER]',
+    id: 'beer-8', name: 'ØL 8', style: '[ØLTYPE]', abv: '[ABV]', temperature: '4–6°C', brewed: 'DD.MM.20YY', batch: '128', brewer: '[BRYGGER]',
     soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
     image: 'images/beer.png', palette: ['#211e24', '#d6b66c'], symbol: '✦',
     description: '[Her skal beskrivelse av ølen inn.]',
