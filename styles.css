@@ -246,6 +246,7 @@ h1 {
   .page-shell { width: calc(100% - 40px); }
   .intro { padding-top: 38px; }
   .tickets-page { padding-top: 24px; }
+  .info-page { padding-top: 24px; }
   .subpage-back-link { margin-bottom: 22px; }
   .tickets-intro { margin-bottom: 24px; }
   .ticket-options { grid-template-columns: 1fr; gap: 14px; }
