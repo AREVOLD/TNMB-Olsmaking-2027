@@ -15,12 +15,15 @@
       }
       .info-card {
         padding: 28px 24px;
-        border: 1px solid #2d2a28;
-        background: #111111;
-        border-radius: 12px;
+        border-left: 4px solid var(--tnmb-red);
+        background: #111;
+        border-radius: 8px;
       }
-      .info-card h1 {
-        margin: 0 0 12px;
+      .info-intro {
+        margin: 0 0 24px;
+        padding-top: 28px;
+      }
+      .info-intro h1 {
         font-size: clamp(1.8rem, 4vw, 2.5rem);
       }
       .info-card h2 {
@@ -57,9 +60,11 @@
     <main class="page-shell info-page">
       <div class="subpage-top">
         <a class="subpage-back-link" href="index.html">← Tilbake til forsiden</a>
-        <section class="info-card">
+        <section class="info-intro" aria-labelledby="info-title">
           <p class="eyebrow"><span class="eyebrow-dot"></span> TNMB ØLSMAKING 2027</p>
-          <h1 id="tickets-title">Tidsplan og praktisk info</h1>
+          <h1 id="info-title">Tidsplan og praktisk info</h1>
+        </section>
+        <section class="info-card" aria-label="Informasjon om arrangementet">
           <p><strong>Sted:</strong> Hen Grendehus</p>
           <p><strong>Tid:</strong> 16.10.2027</p>
           <p>TNMB er stolte av nok en gang å kunne invitere til ølsmaking på Hen Grendehus, lørdag 16. oktober 2027. Vi serverer smaksprøver av totalt 7–8 enheter.</p>
