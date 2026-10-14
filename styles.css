@@ -80,7 +80,7 @@ button { color: inherit; }
 body > .list-footer { margin-top: auto; }
 .info-page,
 .tickets-page { flex: 1; }
-.intro { padding: 54px 0 25px; }
+.intro { padding: 32px 0 25px; }
 .event-details { margin-bottom: 25px; padding: 15px; border-left: 4px solid #fb0101; border-radius: 8px; background: #111; }
 .event-details p { display: grid; grid-template-columns: 72px 1fr; margin: 0 0 5px; font-size: 1.1rem; }
 .event-details p:last-of-type { margin-bottom: 0; }
@@ -244,7 +244,7 @@ h1 {
 @media (max-width: 640px) {
   .topbar { height: 58px; padding-right: 20px; padding-left: 20px; }
   .page-shell { width: calc(100% - 40px); }
-  .intro { padding-top: 38px; }
+  .intro { padding-top: 24px; }
   .tickets-page { padding-top: 24px; }
   .info-page { padding-top: 24px; }
   .subpage-back-link { margin-bottom: 22px; }
