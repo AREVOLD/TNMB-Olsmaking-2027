@@ -127,7 +127,10 @@ h1 {
 .ticket-button:active { transform: scale(.98); }
 .ticket-button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
-.tickets-page { padding: 52px 0 72px; }
+.tickets-page { padding: 32px 0 72px; }
+.tickets-back-link { display: inline-block; margin-bottom: 26px; color: var(--tnmb-red); font-size: .95rem; font-weight: 600; text-decoration: none; }
+.tickets-back-link:hover { text-decoration: underline; }
+.tickets-back-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .tickets-intro { max-width: 760px; margin: 0 auto 32px; }
 .tickets-intro h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
 .tickets-lead { max-width: 650px; margin: 18px 0 0; color: #d9d5ce; font-size: 1rem; line-height: 1.7; }
@@ -224,7 +227,8 @@ h1 {
   .topbar { height: 58px; padding-right: 20px; padding-left: 20px; }
   .page-shell { width: calc(100% - 40px); }
   .intro { padding-top: 38px; }
-  .tickets-page { padding-top: 38px; }
+  .tickets-page { padding-top: 24px; }
+  .tickets-back-link { margin-bottom: 22px; }
   .tickets-intro { margin-bottom: 24px; }
   .ticket-options { grid-template-columns: 1fr; gap: 14px; }
   .ticket-card { padding: 20px; }
