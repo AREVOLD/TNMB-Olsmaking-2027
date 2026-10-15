@@ -244,6 +244,11 @@ h1 {
 .untappd-link:focus-visible { outline: 2px solid #222222; outline-offset: 3px; }
 
 @media (min-width: 641px) {
+  .detail-copy h1,
+  .untappd-link {
+    margin-left: clamp(-46px, -4vw, -16px);
+  }
+
   .detail-info-card {
     width: calc(100% + clamp(16px, 4vw, 46px));
     margin-left: clamp(-46px, -4vw, -16px);
