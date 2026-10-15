@@ -67,6 +67,7 @@ const buckBeers = Array.from({ length: 8 }, (_, index) => ({
   brewer: '[BRYGGER]',
   soundtrack: '[Her skal man skrive hvilken musikk som passer til ølen.]',
   description: '[Her skal beskrivelse av ølen inn.]',
+  untappd: 'https://untappd.com/TNMB',
   image: 'images/beer.png',
   palette: ['#bd653d', '#f3d28b'],
   symbol: '☼'
