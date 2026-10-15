@@ -263,6 +263,7 @@ h1 {
   .beer-card { min-height: 112px; padding-top: 12px; padding-bottom: 12px; }
   .label-thumb { width: 68px; height: 84px; flex-basis: 68px; }
   .detail-view { padding-top: 16px; }
+  .detail-view > .list-footer { margin-top: 48px; }
   .detail-layout { grid-template-columns: 1fr; gap: 25px; margin-top: 14px; }
   .detail-art-wrap { position: static; padding: 18px; }
   .detail-art { width: min(74%, 285px); }
