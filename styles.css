@@ -225,6 +225,7 @@ h1 {
 .detail-art-wrap { position: sticky; top: 24px; padding: 26px; background: #171615; }
 .detail-art { display: block; width: min(100%, 340px); height: auto; margin: 0 auto; object-fit: contain; box-shadow: 4px 8px 22px rgb(32 37 31 / 17%); }
 .detail-copy { padding-top: 8px; }
+.detail-info-card { margin-top: 18px; padding: 22px 24px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; }
 
 .detail-copy h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.08; }
 .detail-description,
@@ -271,6 +272,7 @@ h1 {
   .detail-art-wrap { position: static; padding: 18px; }
   .detail-art { width: min(74%, 285px); }
   .detail-copy { padding: 0 2px; }
+  .detail-info-card { padding: 19px; }
   .fact { grid-template-columns: minmax(120px, .9fr) 1.1fr; }
 }
 

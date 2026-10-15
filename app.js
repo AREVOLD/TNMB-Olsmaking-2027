@@ -163,15 +163,17 @@ function renderDetail(beer) {
       <article class="detail-copy">
         <h1>${beer.name}</h1>
         ${untappdLink}
-        <p class="detail-description">${beer.description}</p>
-        <dl class="facts">
-          <div class="fact"><dt>Øltype</dt><dd>${beer.style}</dd></div>
-          <div class="fact"><dt>Alkohol</dt><dd>${beer.abv}</dd></div>
-          <div class="fact"><dt>Servering</dt><dd>${beer.temperature}</dd></div>
-          <div class="fact"><dt>Bryggedato</dt><dd>${beer.brewed}</dd></div>
-          <div class="fact"><dt>Brygger</dt><dd>${beer.brewer || ''}</dd></div>
-          <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
-        </dl>
+        <div class="detail-info-card">
+          <p class="detail-description">${beer.description}</p>
+          <dl class="facts">
+            <div class="fact"><dt>Øltype</dt><dd>${beer.style}</dd></div>
+            <div class="fact"><dt>Alkohol</dt><dd>${beer.abv}</dd></div>
+            <div class="fact"><dt>Servering</dt><dd>${beer.temperature}</dd></div>
+            <div class="fact"><dt>Bryggedato</dt><dd>${beer.brewed}</dd></div>
+            <div class="fact"><dt>Brygger</dt><dd>${beer.brewer || ''}</dd></div>
+            <div class="fact soundtrack-fact"><dt>Soundtrack</dt><dd>${beer.soundtrack}</dd></div>
+          </dl>
+        </div>
       </article>
     </div>
     <footer class="list-footer"><span></span><span></span></footer>`;
