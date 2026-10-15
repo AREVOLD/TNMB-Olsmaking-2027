@@ -174,7 +174,7 @@ function renderDetail(beer) {
         </dl>
       </article>
     </div>
-    <footer class="list-footer"><span>2027&nbsp; · &nbsp;TNMB</span><span></span></footer>`;
+    <footer class="list-footer"><span></span><span></span></footer>`;
   homeView.hidden = true;
   detailView.hidden = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
