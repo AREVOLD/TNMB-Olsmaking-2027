@@ -152,7 +152,7 @@ function renderBuckList() {
 function renderDetail(beer) {
   const untappdLink = beer.untappd ? `
     <a class="untappd-link" href="${beer.untappd}" target="_blank" rel="noreferrer noopener">
-      🍺 Åpne i Untappd ↗
+      🍺 ÅPNE I UNTAPPD ↗
     </a>
   ` : '';
 
