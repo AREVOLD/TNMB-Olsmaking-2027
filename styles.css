@@ -99,7 +99,7 @@ body > .list-footer { margin-top: auto; }
 h1 {
   margin: 0;
   font-family: Impact, 'Arial Black', sans-serif;
-  font-size: clamp(1.8rem, 3vw, 3.125rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
   font-weight: 500;
   line-height: 1.02;
 }
