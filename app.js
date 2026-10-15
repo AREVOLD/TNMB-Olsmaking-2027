@@ -213,12 +213,16 @@ detailView.addEventListener('error', useLabelFallback, true);
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
   installPrompt = event;
-  installButton.hidden = false;
+  if (!isIosDevice || !navigator.standalone) installButton.hidden = false;
 });
 
 installButton.addEventListener('click', async () => {
+  if (isIosDevice) {
+    showToast('På iPhone/iPad: Trykk Del-knappen i Safari og velg «Legg til på Hjem-skjerm».');
+    return;
+  }
   if (!installPrompt) {
-    showToast('Åpne Del-menyen i Safari og velg «Legg til på Hjem-skjerm».');
+    showToast('Installasjon støttes ikke i denne nettleseren.');
     return;
   }
   installPrompt.prompt();
