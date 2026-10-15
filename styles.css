@@ -238,8 +238,8 @@ h1 {
 .fact dd { margin: 0; font-weight: 600; }
 .fact.soundtrack-fact { grid-template-columns: 1fr; align-items: start; gap: 7px; padding: 14px 0; }
 .soundtrack-fact dd { color: #d0ccc3; font-weight: 400; white-space: pre-line; }
-.untappd-link { min-height: 44px; padding: 11px 16px; display: inline-flex; align-items: center; margin-top: 12px; border-radius: 6px; background: #926900; color: #fff; font-size: 1rem; font-weight: 700; text-decoration: none; transition: background-color 160ms ease, transform 160ms ease; }
-.untappd-link:hover { background: #7a5700; }
+.untappd-link { min-height: 44px; padding: 11px 16px; display: inline-flex; align-items: center; margin-top: 12px; border-radius: 6px; background: #ffce0d; color: #fff; font-size: 1rem; font-weight: 700; text-decoration: none; transition: background-color 160ms ease, transform 160ms ease; }
+.untappd-link:hover { background: #e17e24; }
 .untappd-link:active { transform: scale(.98); }
 .untappd-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
