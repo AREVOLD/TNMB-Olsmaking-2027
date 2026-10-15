@@ -235,7 +235,7 @@ h1 {
 .fact { min-height: 49px; display: grid; grid-template-columns: minmax(130px, 1fr) 1fr; align-items: center; gap: 12px; border-bottom: 1px solid var(--line); }
 .fact dt { color: var(--muted); }
 .fact dd { margin: 0; font-weight: 600; }
-.soundtrack-fact { grid-template-columns: 1fr; align-items: start; gap: 7px; padding: 14px 0; }
+.fact.soundtrack-fact { grid-template-columns: 1fr; align-items: start; gap: 7px; padding: 14px 0; }
 .soundtrack-fact dd { color: #d0ccc3; font-weight: 400; white-space: pre-line; }
 .untappd-link { display: inline-flex; align-items: center; margin-top: 12px; color: var(--green); font-size: 1rem; font-weight: 700; text-decoration: none; text-underline-offset: 3px; transition: color 160ms ease, text-decoration-color 160ms ease; }
 .untappd-link:hover { color: #c1d5a7; text-decoration: underline; }
