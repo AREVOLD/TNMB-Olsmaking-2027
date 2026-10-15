@@ -145,7 +145,7 @@ h1 {
 .subpage-top > .subpage-back-link { margin-bottom: 12px; }
 .tickets-intro { margin: 0 0 32px; padding-top: 10px; }
 .tickets-intro h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
-.tickets-lead { max-width: 650px; margin: 18px 0 0; padding: 4px 0 4px 16px; border-left: 4px solid var(--tnmb-red); color: #d9d5ce; font-size: 1rem; line-height: 1.7; }
+.tickets-lead { max-width: 650px; margin: 18px 0 0; padding: 22px 24px; border-left: 4px solid var(--tnmb-red); border-radius: 8px; background: #111; color: #d9d5ce; font-size: 1rem; line-height: 1.7; }
 .ticket-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .ticket-card { min-width: 0; padding: 20px 24px 24px; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid #383331; border-top: 4px solid var(--tnmb-red); border-radius: 10px; background: #111; transition: box-shadow 180ms ease, transform 180ms ease; }
 .ticket-card h2 { min-height: 2.7em; margin: 0; font-family: Arial, sans-serif; font-weight: 700; font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.35; }
@@ -258,7 +258,9 @@ h1 {
   .ticket-card h2 { min-height: 0; }
   .ticket-price { margin: 2px 0 4px; }
   .ticket-note { margin-bottom: 18px; }
-  .ticket-info { margin-top: 22px; padding: 19px; }
+  .tickets-lead,
+  .ticket-info { padding: 19px; }
+  .ticket-info { margin-top: 22px; }
   .intro-copy { margin-bottom: 27px; }
   .beer-list { grid-template-columns: 1fr; }
   .beer-card { min-height: 112px; padding-top: 12px; padding-bottom: 12px; }
