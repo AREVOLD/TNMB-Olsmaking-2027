@@ -81,21 +81,21 @@ const toast = document.querySelector('#toast');
 const installButton = document.querySelector('#install-button');
 const countdownNumber = document.querySelector('#countdown-number');
 const countdownSuffix = document.querySelector('#countdown-suffix');
+const countdownCard = document.querySelector('#countdown-card');
+const kioskHomeCard = document.querySelector('#kiosk-home-card');
 const isIosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 let installPrompt;
 let toastTimeout;
+let countdownTimeout;
 
 function updateCountdown() {
-  const dateParts = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'Europe/Oslo',
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric'
-  }).formatToParts(new Date());
-  const todayParts = Object.fromEntries(dateParts.map(({ type, value }) => [type, value]));
-  const today = Date.UTC(Number(todayParts.year), Number(todayParts.month) - 1, Number(todayParts.day));
+  const now = new Date();
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
   const eventDate = Date.UTC(2027, 9, 16);
   const daysRemaining = Math.ceil((eventDate - today) / 86400000);
+
+  countdownCard.hidden = daysRemaining <= 0;
+  kioskHomeCard.hidden = daysRemaining > 0;
 
   if (daysRemaining > 0) {
     countdownNumber.textContent = String(daysRemaining);
@@ -107,6 +107,16 @@ function updateCountdown() {
     countdownNumber.textContent = 'Ølsmakingen er gjennomført';
     countdownSuffix.textContent = '';
   }
+}
+
+function scheduleCountdownUpdate() {
+  window.clearTimeout(countdownTimeout);
+  const now = new Date();
+  const nextLocalMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  countdownTimeout = window.setTimeout(() => {
+    updateCountdown();
+    scheduleCountdownUpdate();
+  }, nextLocalMidnight.getTime() - now.getTime() + 100);
 }
 
 function labelImage(beer) {
@@ -245,7 +255,11 @@ window.addEventListener('hashchange', () => {
 renderList();
 renderBuckList();
 updateCountdown();
-window.setInterval(updateCountdown, 60 * 60 * 1000);
+scheduleCountdownUpdate();
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') updateCountdown();
+});
+window.addEventListener('focus', updateCountdown);
 
 if (isIosDevice && !navigator.standalone) installButton.hidden = false;
 
