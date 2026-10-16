@@ -148,6 +148,7 @@ h1 {
   transition: background-color 160ms ease, transform 160ms ease;
 }
 
+.intro > .ticket-button { width: calc(100% - 34px); }
 .ticket-button:hover { background: #d90000; }
 .ticket-button:active { transform: scale(.98); }
 .ticket-button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
