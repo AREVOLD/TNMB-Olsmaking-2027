@@ -24,7 +24,7 @@
         </section>
         <section class="info-card kiosk-card" aria-label="TNMB-kiosken">
           <p>Velkommen til TNMB-kiosken. Her finner du pølser, kaffe og andre varer tilgjengelig i kiosken.</p>
-          <a class="ticket-button kiosk-button" href="vipps://qr.vipps.no/vp/WMaMeO7cp">🛒 ÅPNE VIPPS KIOSK</a>
+          <button class="ticket-button kiosk-button" id="open-vipps-kiosk" type="button">🛒 ÅPNE VIPPS KIOSK</button>
           <table class="kiosk-prices">
             <thead>
               <tr>
@@ -50,6 +50,14 @@
         </section>
       </div>
     </main>
+    <dialog class="kiosk-help-dialog" id="kiosk-help-dialog" aria-labelledby="kiosk-help-title" aria-describedby="kiosk-help-message">
+      <h2 id="kiosk-help-title">Åpne TNMB Kiosk</h2>
+      <p id="kiosk-help-message">TNBM Kiosk åpnes direkte i Vipps når appen er installert. Hvis du bruker nettleser, skann QR-koden ved kiosken for å åpne TNMB Kiosk i Vipps.</p>
+      <form method="dialog">
+        <button class="ticket-button kiosk-dialog-close" type="submit">Lukk</button>
+      </form>
+    </dialog>
     <footer class="page-shell list-footer"><span></span><span></span></footer>
+    <script src="kiosk.js" defer></script>
   </body>
 </html>

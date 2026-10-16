@@ -92,10 +92,11 @@ function updateCountdown() {
   const now = new Date();
   const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
   const eventDate = Date.UTC(2027, 9, 16);
+  const kioskStartDate = Date.UTC(2026, 9, 16);
   const daysRemaining = Math.ceil((eventDate - today) / 86400000);
 
   countdownCard.hidden = daysRemaining <= 0;
-  kioskHomeCard.hidden = daysRemaining > 0;
+  kioskHomeCard.hidden = today < kioskStartDate;
 
   if (daysRemaining > 0) {
     countdownNumber.textContent = String(daysRemaining);
